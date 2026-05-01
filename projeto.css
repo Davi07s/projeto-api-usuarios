@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+
+header {
+  background: #2e2e2e;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #fff;
+}
+
+
+.controls {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.controls button {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #555;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  width: 220px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+.card p {
+  overflow-wrap: break-word;
+}
+
+footer {
+  background: #2e2e2e;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}

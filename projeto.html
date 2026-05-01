@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Random User App</title>
+  <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">GEREADOR DE USUÁRIOS</h1>
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Usuários</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Pesquisar por nome...">
+      <input type="number" id="age" placeholder="Filtrar por idade...">
+      <select id="gender">
+        <option value="">Todos</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+      </select>
+      <select id="nat">
+        <option value="">Qualquer país</option>
+        <option value="br">Brasil</option>
+        <option value="us">Estados Unidos</option>
+        <option value="fr">França</option>
+      </select>
+      <label for="count">Qtd. resultados:</label>
+      <select id="count">
+        <option value="12">12</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="50">50</option>
+      </select>
+      <button id="load">Carregar Usuários</button>
+    </div>
+
+    <div id="users" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Gerador de Usuários | Desenvolvido por Davi</p>
+  </footer>
+
+  <script src="projeto.js"></script>
+</body>
+</html>
