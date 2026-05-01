@@ -5,7 +5,7 @@ async function loadUsers() {
   const nat = document.getElementById('nat').value;
   const count = document.getElementById('count').value;
 
-  const url = `projeto.php?results=${count}${gender ? '&gender='+gender : ''}${nat ? '&nat='+nat : ''}`;
+  const url = `api.php?results=${count}${gender ? '&gender='+gender : ''}${nat ? '&nat='+nat : ''}`;
 
   const container = document.getElementById('users');
   container.innerHTML = "<p>Carregando...</p>";
